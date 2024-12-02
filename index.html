@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Richard Yang">
+    <title>HTML Form</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>HTML Form</h1>
+    <div class="formContainer">
+        <form action="results.html" method="GET">
+            <div>
+                <label>
+                    First Name
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Email
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Age
+                    <input type="number" name="age" id="age" min="10" max="130" step="1" placeholder="Enter Age"
+                        required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Birthday
+                    <input type="date" name="date" id="date" required min="2022-01-01">
+                </label>
+            </div>
+            <div>
+                <label for="phoneNumber">Phone</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber">
+            </div>
+            <div>
+                Favorite Season:
+                <label>
+                    Winter
+                    <input type="checkbox" name="season" value="Winter" id="Winter">
+                </label>
+                <label>
+                    Summer
+                    <input type="checkbox" name="season" value="Summer" id="Summer">
+                </label>
+            </div>
+            <div>
+                <label>
+                    User Name
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </label>
+            </div>
+            <div>
+                Do you prefer Nighttime or Daytime?
+                <label>
+                    Night
+                    <input type="radio" name="preference" id="night" value="Night">
+                </label>
+                <label>
+                    Day
+                    <input type="radio" name="preference" id="day" value="Day">
+                </label>
+            </div>
+            <div>
+                <label for="faveDay">Favorite Weekday</label>
+                <select name="faveDay" id="faveDay" multiple>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday" selected>Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Password
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </label>
+            </div>
+            <div>
+                <label for="opinion">Tell us what you think</label>
+                <textarea name="opinion" id="opinion"></textarea>
+            </div>
+            <div>
+                <label for="faveColor">Favorite Color</label>
+                <input type="color" name="faveColor" id="faveColor">
+            </div>
+            <input type="hidden" name="sessionid" value="secretManageTheSession">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
